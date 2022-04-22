@@ -8,7 +8,7 @@
   <!-- viewport의 가로사이즈 = 디바이스-가로 사이즈로 변경한 것 /   1.0 전혀 확대되거나 축소되지 않은 사이즈 -->
   <title>Starbucks Coffee Korea</title>
   <!-- 프로젝트의 root경로에 'favicon.ico'파일이 있으면, 자동으로 파일을 찾아다가 사용함 
-      따라서 'Starbucks.ico'와 같이 이름명을 변경하지 말고 
+      따라서 'Starbucks.ico'와 같이 이름을 변경하지 말고 
       *** 'favicon.ico'로 지정해줘야됨  -->
   <!-- 오픈 그 래프, 트위터 카드 -->
   <meta property="og:type" content="website" />
@@ -34,6 +34,14 @@
   <!-- reset.css cdn을 검색 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
   <link rel="stylesheet" href="./css/main.css" />
+  <!-- scroll event  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- gsap mdn - js animation쓸 거 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"
+    integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script defer src="./js/main.js"></script>
 </head>
 
@@ -321,7 +329,35 @@
       </ul>
 
     </div>
+    <div class="badges">
+      <div class="badge">
+        <img src="./images/badge1.jpg" alt="Badge">
+      </div>
+      <div class="badge">
+        <img src="./images/badge2.jpg" alt="Badge">
+      </div>
+      <div class="badge">
+        <img src="./images/badge3.jpg" alt="Badge">
+      </div>
+    </div>
   </header>
+
+
+  <!-- visual -->
+  <section class="visual">
+    <div class="inner">
+      <div class="title">
+        <img src="./images/visual_title.png" alt="STARBUCKS DELIGHTFUL START TO THE YEARS">
+        <!-- 이미지에 문구가 있으면 대체텍스트에 넣어주면 좋음 -->
+        <a href="javascript:void(0)" class="btn btn--brown">자세히보기</a>
+      </div>
+      <img class="cup1 image" src="./images/visual_cup1.png" alt="new OATMEAL LATTE" />
+      <img class="cup1 text" src="./images/visual_cup1_text.png" alt="오트밀 라떼" />
+      <img class="cup2 image" src="./images/visual_cup2.png" alt="new STARBUCKS CARAMEL CRUMBLE MOCHA" />
+      <img class="cup2 text" src="./images/visual_cup2_text.png" alt="스타벅스 카라멜 크럼블 라떼" />
+      <img class="spoon" src="./images/visual_spoon.png" alt="Spoon">
+    </div>
+  </section>
 </body>
 
 </html>
